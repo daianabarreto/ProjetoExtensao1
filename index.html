@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Horas Extras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Horas Extras</h1>
+
+        <form id="overtime-form">
+            <label for="employee-name">Nome do Funcionário:</label>
+            <input type="text" id="employee-name" required>
+
+            <label for="date">Data:</label>
+            <input type="date" id="date" required>
+
+            <label for="start-time">Hora de Início:</label>
+            <input type="time" id="start-time" required>
+
+            <label for="end-time">Hora de Término:</label>
+            <input type="time" id="end-time" required>
+
+            <button type="submit">Registrar Horas Extras</button>
+        </form>
+
+        <div id="result">
+            <h2>Horas Extras Registradas</h2>
+            <ul id="overtime-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
